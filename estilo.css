@@ -1,14 +1,18 @@
 div {
     padding-top: 15px;
     padding-bottom: 20px;
+    border: 2px solid #000;
 }
 
 .container{
      width: 250px;
+     background-color: #ffffff;
 }
 
 .imagem-card{
-    width: 250px;
+    width: 230px
+
+    
 }
 
 .descricao-card{
@@ -26,7 +30,7 @@ div {
 
 .formaPagamento-card{
     font-family: Arial
-    color: #666666
+    color #666666
 }
 
 .botao-card{
