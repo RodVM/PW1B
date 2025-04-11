@@ -10,10 +10,10 @@
      margin: 0 auto;
 
     }
-    .header{
-        height: 1756px;
+    header{
+        height: 80px;
         width: 100%;
-        background-color: #FF0000;
+        background-color: #ff0800;
     }
     nav{
         height: 75px;
@@ -27,8 +27,9 @@
 
     }
     .produto{
-        height: 500px;
+        height: 300px;
         width: 100%;
+        display: flex;
 
     }
     .img-produto{
@@ -42,4 +43,23 @@
         height: 100%;
         background-color: darkgoldenrod;
         
+    }
+    .linha-botao-preco{
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid;
+        margin-top:50px
+    }
+    .preco {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Arial;
+        color: #ff6500;
+    }
+    .botao-comprar{
+        background-color: #ff6500;
+        color: #ffffff;
+        padding: 0 130px;
+        border:none;
+
     }
