@@ -1,0 +1,17 @@
+<script>
+    function divisão() {
+        var a = parseFloat(prompt("Digite o primeiro número:"));
+        var b = parseFloat(prompt("Digite o segundo número:"));
+
+        if (b === 0) {
+            alert("Divisão por zero não é permitida.");
+            return null;
+        }
+
+        return a / b;
+    }
+    var resultado = divisão(10, 2);
+    if (resultado !== null) {
+        alert("O resultado da divisão é " + resultado + ".");
+    }           
+</script>
