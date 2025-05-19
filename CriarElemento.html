@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Elemento</title>
+</head>
+<body>
+    <button onclick="CriarElemento()" id="botao">
+        Criar Elemento 
+    </button>
+    <div id="caixa"></div>
+    
+    <input type="color" id="cor">
+
+    <script>
+        function CriarElemento() {
+            var cor = document.getElementById("cor")
+
+            var elemento = document.createElement("h1")
+            elemento.style.backgroundColor = cor.value
+            elemento.style.color = "#FFFFFF"
+            elemento.style.fontSize = '50px'
+            elemento.innerText = "Oi Mundo"
+            elemento.classList.add("ClasseCampo")
+
+            
+            var caixa = document.getElementById("caixa");
+            caixa.append(elemento);
+        }
+    </script>
+</body>
+</html>
