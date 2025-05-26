@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulação de Vetor</title>
+</head>
+<body>
+ <h1>Exercícios para o trabalho final</h1>
+
+  <div id="somaParesDiv">Soma dos pares: </div>
+  <input id="somaImparesInput">
+  <ul id="listaNumeros"></ul>
+  <div id="resultadoMultiplicacao">Multiplicados por 2: </div>
+  <button onclick="executar()">Executar</button>
+
+  <script>
+    const vetor = [];
+    for (let i = 150; i >= 1; i--) {
+      vetor.push(i);
+    }
+
+    function executar() {
+      const ul = document.getElementById("listaNumeros");
+      ul.innerHTML = "Números em ordem decrescentes: ";
+
+      let somaPares = 0;
+      let somaImpares = 0;
+      let resultadosMultiplicados = [];
+
+      vetor.forEach(numero => {
+        
+        const li = document.createElement("li");
+        li.textContent = numero;
+        ul.appendChild(li);
+
+        
+        if (numero % 2 === 0) {
+          somaPares += numero;
+        } else {
+          somaImpares += numero;
+        }
+
+        
+        resultadosMultiplicados.push(numero * 2);
+      });
+
+      document.getElementById("somaParesDiv").textContent = "Soma dos pares: " + somaPares;
+      document.getElementById("somaImparesInput").value = somaImpares;
+      document.getElementById("resultadoMultiplicacao").textContent = 
+      "Multiplicados por 2: " + resultadosMultiplicados.join(", ");
+    }
+  </script>
+
+</body>
+</html>
