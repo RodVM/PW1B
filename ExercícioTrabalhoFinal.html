@@ -16,22 +16,22 @@
   <button onclick="executar()">Executar</button>
 
   <script>
-    const vetor = [];
+    var vetor = [];
     for (let i = 150; i >= 1; i--) {
       vetor.push(i);
     }
 
     function executar() {
-      const ul = document.getElementById("listaNumeros");
+      var ul = document.getElementById("listaNumeros");
       ul.innerHTML = "Números em ordem decrescentes: ";
 
-      let somaPares = 0;
-      let somaImpares = 0;
-      let resultadosMultiplicados = []; 
+      var somaPares = 0;
+      var somaImpares = 0;
+      var resultadosMultiplicados = []; 
 
       vetor.forEach(numero => {
         
-        const li = document.createElement("li");
+        var li = document.createElement("li");
         li.textContent = numero;
         ul.appendChild(li);
 
