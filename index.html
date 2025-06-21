@@ -1,69 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Links -->
-  <link rel="icon" href="./favicons/favicon-16x16.png">
-  <link rel="stylesheet" href="./css/style.css">
-
-  <!-- Main JS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./favicons/favicon-16x16.png" />
+  <link rel="stylesheet" href="./css/style.css" />
   <script defer src="./js/script.js"></script>
-
   <title>Pokédex</title>
 </head>
-
 <body>
 
-
-  <main>
-
-
-    <div class="fundo-pokedex">
-      <div class="side1">
-        <div class="fundo">
-        </div>
-        <img src="#" alt="pokemon" class="pokemon__image">
-        <form class="form">
-          <input type="search" class="input__search" placeholder="Nome ou Número" required />
-        </form>
-
-      </div>
-      <div class="side2">
-
-      </div>
+<main>
+  <div class="fundo-pokedex">
+    <div class="side1">
+      <div class="fundo"></div>
+      <img src="#" alt="pokemon" class="pokemon__image" />
+      <form class="form">
+        <input type="search" class="input__search" placeholder="Nome ou Número" required />
+      </form>
     </div>
+    <div class="side2"></div>
+  </div>
+
+  <h1 class="pokemon__data">
+    <span class="pokemon__number"></span> -
+    <span class="pokemon__name"></span>
+  </h1>
+
+  
+  <div class="painel-tipos">
+   <div class="pokemon__stats">
+  <div class="pokemon__types"></div>
+  <div class="pokemon__info">
+    <span class="pokemon__height"></span>
+    <span class="pokemon__weight"></span>
+  </div>
+</div>
+
+</div>
+
+  </div>
+   
+  <div class="buttons">
+    <button class="button toggle-dark">🌙 Modo Escuro</button>
+    <button class="button btn-prev">Anterior &lt;</button>
+    <button class="button btn-next">Próximo &gt;</button>
+  
+    
+  </div>
 
 
 
-
-    <h1 class="pokemon__data">
-
-      <span class="pokemon__number"></span> -
-      <span class="pokemon__name"></span>
-    </h1>
-
-
-
-
-
-
-
-
-
-    <div class="buttons">
-      <button class="button btn-prev">Anterior &lt;</button>
-      <button class="button btn-next">Próximo &gt;</button>
-    </div>
-
-
-
-
-  </main>
+</main>
 
 
 </body>
-
 </html>
